@@ -6,5 +6,5 @@
 </div>
 
 @if ($error)
-    <div class="error">{{ $error }}</div>
+    <div class="text-red-500">{{ $error }}</div>
 @endif
