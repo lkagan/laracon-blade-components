@@ -4,6 +4,10 @@
             label="Username"
             :error="$errors->first('username')"
         >
+            <x-slot:label class="flex items-center space-x-1">
+                <x-icon.user class="text-gray-600" />
+                <span>Username</span>
+            </x-slot:label>
             <x-input.text
                 class="text"
                 name="username"

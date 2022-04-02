@@ -1,7 +1,9 @@
 @props(['label', 'error' => null])
 
 <div>
-    <label for="">{{ $label }}</label>
+    <label for=""
+       {{ $label->attributes->class('block text-gray-600 mb-1') }}
+    >{{ $label }}</label>
     {{ $slot }}
 </div>
 
